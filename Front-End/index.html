@@ -1,0 +1,200 @@
+<!--tag para versão do html. Neste caso é o HTML mais recente-->
+<!DOCTYPE html>
+<html>
+  <!--Cabeçalho - configurações da página-->
+  <head>
+    <title>Page Title</title>
+
+    <!-- link para o arquivo css-->
+    <link rel="stylesheet" href="./css/estilo.css" />
+
+    <!-- link para framework bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- definição do formato de codificação de caracteres utilizado no documento-->
+    <meta charset="UTF-8" />
+    <!-- descrição da página-->
+    <meta name="description" content="Aula de HTML e CSS" />
+    <!-- palavras chaves-->
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript" />
+    <meta name="author" content="Rodrigo Farias" />
+    <!-- indicação de que a página deve ser atualizada a cada 30 segundos-->
+    <meta http-equiv="refresh" content="30" />
+
+    <!-- código javascript simplificado não recomendado-->
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+      }
+    </script>
+    <!-- código javascript 2 recomendado-->
+    <script src="./js/inicial.js"></script>
+
+    <!-- tag para adicional css diretamente dentro do arquivo html - não recomendado
+    <style>
+      body {
+        background-color: lightblue;
+      }
+
+      h1 {
+        color: white;
+        text-align: center;
+      }
+
+      p {
+        font-family: verdana;
+        font-size: 20px;
+      }
+    </style>-->
+  </head>
+
+  <body id="bodyID" class="bodyClass">
+    <h1 id="demo">This is a heading</h1>
+    <h2 onclick="myFunction()">This is a heading</h2>
+
+    <!--Não funcionará uma tag html com dois id-->
+    <h3 id="para1 para2" onclick="myFunction2()">This is a heading</h3>
+
+    <!--Para usar mais do que um estilo em uma única tag html é necessário utilizar classes css-->
+    <h3 class="para1 para2" id="tag3">This is a heading 1232435467679</h3>
+    <p>This is a paragraph.</p>
+
+    <!-- Botão para trocar cor do body-->
+    <button onclick="trocaBackColor()">Troca cor</button>
+
+    <div>
+      <p></p>
+      <label>Nome</label>
+      <input id="nome" type="text" onchange="escreveSaudacao(this.value)" />
+      <p></p>
+      <p id="saudacao">Boa noite!</p>
+    </div>
+
+    <!-- Adicionando um card bootstrap de exemplo-->
+    <div class="card" style="width: 30rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+
+    <!-- Adicionando um card para imagem bootstrap de exemplo-->
+    <div class="card" style="width: 18rem;">
+      <img src="./img/teste1.jpg" class="card-img-top" alt="Upload de imagem" width="3000%" />
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <!-- Adicionando um card bootstrap de exemplo-->
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <!-- Adicionando um card bootstrap de exemplo-->
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+      <div class="row">
+        <div class="col-6 col-md-4">
+          
+          <!-- Adicionando um card bootstrap de exemplo-->
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          
+          <!-- Adicionando um card bootstrap de exemplo-->
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <!-- Adicionando um card bootstrap de exemplo-->
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columns are always 50% wide, on mobile and desktop -->
+      <div class="row">
+        <div class="col-6">.col-6</div>
+        <div class="col-6">.col-6</div>
+      </div>
+
+
+
+      <img src="./img/teste1.jpg" class="card-img-top" alt="Upload de imagem" width="30%" />
+    </div>
+  </body>
+</html>
